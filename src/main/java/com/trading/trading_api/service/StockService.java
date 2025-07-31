@@ -16,10 +16,10 @@ import java.util.stream.Collectors;
 @Service
 public class StockService {
 
-    @Value("${alphavantage.api.key:Y3S5JIOR9KMAK1ZG}")
+    @Value("${alphavantage.api.key}")
     private String apiKey;
 
-    @Value("${alphavantage.api.url:https://www.alphavantage.co/query}")
+    @Value("${alphavantage.api.url}")
     private String apiUrl;
 
     private final RestTemplate restTemplate;
